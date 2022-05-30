@@ -29,6 +29,9 @@ class AddressResolverGroupProvider {
     static {
         boolean dnsResolverAvailable = LettuceClassUtils.isPresent("io.netty.resolver.dns.DnsAddressResolverGroup");
 
+        // Fuzen - ¡Minecraft no puede con esto! Así que simplemente trataremos como que no existe para evitarnos problemas...
+        dnsResolverAvailable = false;
+
         AddressResolverGroup<?> group;
         if (dnsResolverAvailable) {
             logger.debug("Starting with netty's non-blocking DNS resolver library");
