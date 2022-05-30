@@ -94,7 +94,7 @@
         <snapshotRepository>
             <id>sonatype-nexus-snapshots</id>
             <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <url>http://nexus.fuzenmc.com:8880/repository/fuzen-nexus/</url>
         </snapshotRepository>
         <repository>
             <id>sonatype-nexus-staging</id>
